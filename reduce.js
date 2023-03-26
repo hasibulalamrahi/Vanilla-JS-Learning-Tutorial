@@ -1,5 +1,11 @@
 
 const numArr = [1,2,6,12,15,13,15,11,23,14]
+const initSum = 0
+// const sum = numArr.reduce((prev,pres)=>{
+//     return prev+pres
+// },initSum)
+// console.log(sum)
+
 var students = [
     {
         id:1603101,
@@ -39,3 +45,8 @@ var students = [
     }
 
 ]
+
+const totalCG = students.reduce((prev,pres)=>{
+    return prev+pres.cg
+},0)
+console.log(totalCG/students.length)

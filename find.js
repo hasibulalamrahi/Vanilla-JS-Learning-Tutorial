@@ -4,6 +4,12 @@
 //array-find 
 
 var arrayr = [1,5,2,4,6,12,17,9,24,29]
+var numToFind = 9
+// const response = arrayr.find((num)=>{
+//     if(num==numToFind) return num
+// })
+// console.log(response)
+
 var users= [
     {
         id:1201,
@@ -32,5 +38,10 @@ var users= [
     }
 ]
 
-const userTofind = "bobmarleynowhere@gmail.com"
+const userTofind = "hasib1234@gmail.com"
 
+const response = users.find((x)=>{
+    if(x.email==userTofind) return x
+
+})
+response ? console.log(response) : console.log("user not found")

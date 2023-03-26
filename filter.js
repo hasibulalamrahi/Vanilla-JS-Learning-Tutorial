@@ -1,4 +1,15 @@
 var numArray = [4,2,6,3,12,11,17,23,20,25,31,27,80]
+//filter
+// const evenNum = numArray.filter((num)=>{
+//     if(num%2==0) return num
+// })
+//map
+// const evenNumMap = numArray.map((num)=>{
+//     if(num%2==0) return num
+// })
+// console.log("filter",evenNum)
+// console.log("map",evenNumMap)
+
 var students = [
     {
         id:1603101,
@@ -39,3 +50,12 @@ var students = [
 
 ]
 
+const papi = students.filter((student)=>{
+    if(student.cg < 3.00) return student.id
+})
+
+const purnoBaan = students.filter((student)=>{
+    if(student.cg >= 3.00) return student
+})
+console.log("Log Khor",papi)
+console.log("Future",purnoBaan)
