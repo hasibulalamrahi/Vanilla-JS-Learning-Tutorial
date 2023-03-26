@@ -1,12 +1,2 @@
-console.log("Hi,Github repo is yet not initialized")
-function hello(){
-    return "Hello world"
-}
-
-hello()
-
-console.log("This line is to demonstrate")
-
-
-console.log("Hello this change is made by hasib")
-console.log("This line is added by nafis bin walid")
+ console.log("Welcome to array-methods - 3rd phase")
+ console.log('Date - 26/3/2023')
